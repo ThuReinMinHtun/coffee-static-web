@@ -52,3 +52,12 @@
     opacity: 1;
   }
 }
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(-4px);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+}
