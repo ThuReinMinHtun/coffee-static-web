@@ -1,16 +1,15 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const btn = document.querySelector(".btn");
-    const navList = document.querySelector(".nav-list");
-    const btnIcon = btn.querySelector("i");
+const menuBtn = document.querySelector("#open-menu-btn");
+const closeBtn = document.querySelector("#close-menu-btn");
+const navMenu = document.querySelector(".nav_menu");
 
-    btn.addEventListener("click", function () {
-      navList.classList.toggle("active");
-      if (navList.classList.contains("active")) {
-        btnIcon.classList.remove("bi-list");
-        btnIcon.classList.add("bi-x");
-      } else {
-        btnIcon.classList.remove("bi-x");
-        btnIcon.classList.add("bi-list");
-      }
-    });
-  });
+menuBtn.addEventListener("click", () => {
+  navMenu.style.display = "block";
+  closeBtn.style.display = "inline-block";
+  menuBtn.style.display = "none";
+});
+
+closeBtn.addEventListener("click", () => {
+  navMenu.style.display = "none";
+  closeBtn.style.display = "none";
+  menuBtn.style.display = "inline-block";
+});
