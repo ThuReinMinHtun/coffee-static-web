@@ -15,7 +15,7 @@
     />
     <link rel="icon" type="image/png" href="./assets/icon/bean.png" />
     <script src="./js/click-btn.js" defer></script>
-
+    <script src="./js/subscribe.js" defer></script>
     <title>THE BEANERY.shop</title>
   </head>
   <body id="top">
@@ -33,7 +33,7 @@
             <li><a href="#menu">Menu</a></li>
             <img class="logo" src="./assets/logo/header-logo.png" alt="" />
             <li><a href="#feedback">Feedback</a></li>
-            <li><a href="#">Shop</a></li>
+            <li><a href="#shop">Shop</a></li>
             <li><a href="#">Contacts</a></li>
           </ul>
           <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
@@ -137,22 +137,52 @@
         <div class="message">
           <div class="feedback-1">
             <h2>"</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, saepe.</p>
-            <img src="./assets/icon/profile-1.png" alt="profile-1" class="profile">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Officiis, saepe.
+            </p>
+            <img
+              src="./assets/icon/profile-1.png"
+              alt="profile-1"
+              class="profile"
+            />
           </div>
           <div class="feedback-1">
             <h2>"</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, saepe.</p>
-            <img src="./assets/icon/profile-2.png" alt="profile-22" class="profile">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Officiis, saepe.
+            </p>
+            <img
+              src="./assets/icon/profile-2.png"
+              alt="profile-22"
+              class="profile"
+            />
           </div>
           <div class="feedback-1">
             <h2>"</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, saepe.</p>
-            <img src="./assets/icon/profile-3.png" alt="profile-3" class="profile">
-            
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Officiis, saepe.
+            </p>
+            <img
+              src="./assets/icon/profile-3.png"
+              alt="profile-3"
+              class="profile"
+            />
           </div>
         </div>
       </section>
+      <!-- end of Feedback part -->
+      <!-- start of shop-subscription -->
+      <section id="shop" class="subscribe-container">
+        <h2>Subscribe to get 50% discount price .</h2>
+        <div class="email-part">
+          <input id="email-input" type="email" placeholder="Email address" />
+          <button class="order-btn" onclick="subscribe()">order now</button>
+        </div>
+      </section>
+      <!-- end of shop-subscription -->
     </main>
     <footer></footer>
   </body>
