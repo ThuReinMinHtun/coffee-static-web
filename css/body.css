@@ -324,7 +324,7 @@ main {
   width: 95%;
   min-height: 50vh;
   position: relative;
-  background-image: url("/assets/image/subscribe-bg.jpg");
+  background-image: url("../assets/image/subscribe-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -346,10 +346,11 @@ main {
   z-index: 1;
 }
 .subscribe-container h2,
-.email-part{
+.email-part {
   z-index: 3;
 }
-.subscribe-container h2{
+
+.subscribe-container h2 {
   font-family: var(--font-playwrite);
   animation: slideInFromLeft 1.5s ease-in-out;
   font-size: 1.5rem;
@@ -357,13 +358,13 @@ main {
 }
 
 /* email to subscribe and order btn */
-.email-part{
+.email-part {
   position: relative;
   display: inline-block;
   margin: 2rem;
 }
 
-.email-part input{
+.email-part input {
   width: 400px;
   height: 40px;
   border: none;
@@ -375,7 +376,7 @@ main {
   margin: 2rem 0;
 }
 
-.email-part button{
+.email-part button {
   position: absolute;
   right: 0;
   top: 0;
@@ -394,12 +395,15 @@ main {
   transition: var(--transition);
 }
 
-.email-part button:hover{
+.email-part button:hover {
   background-color: var(--pale-white);
   color: var(--coffee);
 }
 /* end of subscription part */
 
+/* ------------footer--------------- */
+
+/* ------------end of footer--------------- */
 /* responsive for tablet */
 @media screen and (max-width: 1024px) {
   .main-container {
@@ -572,7 +576,7 @@ main {
   .subscribe-container h2 {
     font-size: 1.1rem;
   }
-  .email-part input{
+  .email-part input {
     width: 300px;
   }
 }
