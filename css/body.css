@@ -405,7 +405,7 @@ main {
 footer{
   width: 100%;
   height: auto;
-  background-color:black;
+  background-color:black !important;
   color: var(--white);
   display: flex;
   flex-direction: column;
@@ -571,7 +571,7 @@ footer{
   footer{
     width: 100%;
     height: auto;
-    background-color:black;
+    background-color:black !important;
     color: var(--white);
     display: flex;
     flex-direction: column;
