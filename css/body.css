@@ -402,7 +402,7 @@ main {
 /* end of subscription part */
 
 /* ------------footer--------------- */
-.footer-container {
+footer{
   width: 100%;
   height: auto;
   background-color:black;
@@ -568,12 +568,17 @@ main {
     height: auto;
     object-fit: cover;
   }
-  .footer-container {
+  footer{
     width: 100%;
     height: auto;
+    background-color:black;
+    color: var(--white);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: left;
+    font-family: var(--font-popping);
     gap: 10px;
     padding: 1rem;
     margin: 1.5rem 0;
