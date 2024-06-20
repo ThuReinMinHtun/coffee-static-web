@@ -13,7 +13,7 @@
   --container-width-lg: 82%;
   --container-width-md: 90%;
   --container-width-sm: 98%;
-  --transition: all 400ms ease;
+  --transition: all 400ms ease-in-out;
   --font-potta-command: "Potta One", cursive;
 }
 body {
@@ -402,6 +402,99 @@ main {
 /* end of subscription part */
 
 /* ------------footer--------------- */
+.footer-container {
+  width: 100%;
+  height: auto;
+  background-color:black;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-family: var(--font-popping);
+  gap: 10px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+}
+.row-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
+}
+.footer-container div h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.footer-container p{
+  color: var(--white);
+}
+.footer-container div p {
+  font-size: 1rem;
+  color: var(--pale-white);
+}
+.footer-container div a{
+  color: var(--pale-white);
+  font-size: 1rem;
+  text-decoration: none;
+  transition: var(--transition)
+}
+/* portfolio part */
+.portfolio-part {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  text-align: left;
+  gap: 10px;
+}
+/* social-icons */
+.social-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.social-icon i{
+  color: var(--white);
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 12px 0;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.social-icon i:hover{
+  color: var(--pale-white);
+}
+/* end of portfolio */
+/* company part */
+.company-part {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+}
+/* end of company part */
+/* about us part */
+.social-part{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+}
+/* end of about us part */
+
+/* contact part */
+.contact-part {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+}
 
 /* ------------end of footer--------------- */
 /* responsive for tablet */
@@ -475,6 +568,56 @@ main {
     height: auto;
     object-fit: cover;
   }
+  .footer-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+  }
+  .row-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+  }
+  .portfolio-part {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    text-align: left;
+    gap: 10px;
+  }
+  .company-part {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    text-align: left;
+    gap: 10px;
+  }
+  .social-part{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    text-align: left;
+    gap: 10px;
+  }
+  .contact-part {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    text-align: left;
+    gap: 10px;
 }
 /* responsive for mobile */
 @media screen and (max-width: 600px) {
@@ -579,4 +722,9 @@ main {
   .email-part input {
     width: 300px;
   }
+  .footer-container p{
+    font-size: 0.8rem;
+  }
 }
+  
+
